@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+
+.content-grid{
+    display: grid;
+    /*grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 15% 15% 40% 15% 15%;*/
+    /* Utilizando shorthand para definir filas y columnas*/
+    grid:  auto auto auto auto auto auto auto auto  / 1fr 1fr 1fr 1fr 1fr  ;
+    /*row-gap: 3px;
+    column-gap: 5px;*/
+    gap: 5px 3px;
+    width: 500px;
+    height: 500px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 0 auto;
+}
+
+.contenido:nth-child(1){
+    background: cornflowerblue;
+    /*grid-column:1/2;
+    grid-row: 1/3;*/
+    grid-area: 1/1/3/2;
+
+}
+.contenido:nth-child(2){
+    background: burlywood;
+    /*grid-column:2/5;
+    grid-row: 1/3;*/
+    grid-area: 1/2/3/5;
+    
+}
+.contenido:nth-child(3){
+    background: palegreen;
+    /*grid-column:5/6;
+    grid-row: 1/2;*/
+    grid-area: 1/5/2/6;
+    
+    
+}
+.contenido:nth-child(4){
+    background: plum;
+    /*grid-column:5/6;
+    grid-row: 2/3;*/
+    grid-area: 2/5/3/6;
+    
+    
+}
+.contenido:nth-child(5){
+    background: paleturquoise;
+   /* grid-column:1/6;
+    grid-row: 3/4;*/
+    grid-area: 3/1/4/6;
+    
+
+}
+.contenido:nth-child(6){
+    background: palegoldenrod;
+    /*grid-column:1/3;
+    grid-row: 4/7;*/
+    grid-area: 4/1/6/3;
+
+}
+.contenido:nth-child(7){
+    background: rgb(198, 130, 238);
+    /*grid-column:3/5;
+    grid-row: 4/7;*/
+    grid-area: 4/3/6/5;
+    
+}
+.contenido:nth-child(8){
+    background: cadetblue;
+    /*grid-column:5/6;
+    grid-row: 4/9;*/
+    grid-area: 4/5/8/6;
+    
+}
+.contenido:nth-child(9){
+    background: rgb(98, 230, 230);
+    /*grid-column:1/3;
+    grid-row: 7/9;*/
+    grid-area: 6/1/8/3;
+    
+}
+.contenido:nth-child(10){
+    background: rgb(181, 103, 103);
+    /*grid-column:3/5;
+    grid-row: 7/9;*/
+    grid-area: 6/3/8/5;
+    
+}
+.contenido:nth-child(11){
+    background: rgb(206, 155, 118);
+   /* grid-column:1/6;
+    grid-row: 9/10;*/
+    grid-area: 8/1/9/6;
+    
+}
